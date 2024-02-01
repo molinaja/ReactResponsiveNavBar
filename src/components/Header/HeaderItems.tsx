@@ -14,7 +14,6 @@ interface HeaderItemsProps {
 
 export const HeaderItems: React.FC<HeaderItemsProps> = ({ onStateOpenChange, isOpen, navLinks }) => {
 
-
     // framer motion variant for navbar animation 
     const navbar = {
         open: () => ({
@@ -34,8 +33,7 @@ export const HeaderItems: React.FC<HeaderItemsProps> = ({ onStateOpenChange, isO
                 damping: 40
             }
         })
-    };
-
+    }
 
     return (
         <motion.ul
